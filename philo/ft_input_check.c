@@ -28,8 +28,6 @@ int	ft_check(char *str, int *track, char type)
 	count = flag;
 	while (count <= *track && str[count] <= limit[count - flag])
 		count++;
-	printf("limit = %c\nstr = %c\ncheck = %d\ntrack = %d\n",
-		limit[count - flag], str[count], count, *track);
 	if (count > *track)
 		return (1);
 	return (-1);
